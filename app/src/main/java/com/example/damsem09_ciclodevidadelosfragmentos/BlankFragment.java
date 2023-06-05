@@ -10,6 +10,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -63,7 +64,10 @@ public class BlankFragment extends Fragment {
     @Override
     public void onAttach(@NonNull Context context) {
         super.onAttach(context);
-        Log.i( "CICLO DE VIDA", "El Fragmento esta en onAttach");
+        Log.i("CICLOVIDA", "Fragmento está onAttach");
+        Toast.makeText(getActivity(), "Mensaje desde el Fragment", Toast.LENGTH_SHORT).show();
+
+
     }
 
     @Override
